@@ -21,17 +21,20 @@ import AudioToolbox
         
         Audio.start()
         Audiobus.start()
+        Midi.start()
         
         return true
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {
         Audio.start()
+        Midi.start()
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
         if (Audiobus.client?.isConnected == false && Settings.sustained == false) {
             Audio.stop()
+            Midi.stop()
         }
     }
 
