@@ -17,6 +17,8 @@ class KeyboardViewController: UIViewController {
     @IBOutlet weak var multitouchGestureRecognizer: MultitouchGestureRecognizer! {
         didSet {
             multitouchGestureRecognizer.sustain = Settings.keyboardSustain.value
+            multitouchGestureRecognizer.count = 3
+            multitouchGestureRecognizer.mode = .queue
         }
     }
     

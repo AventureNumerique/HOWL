@@ -17,6 +17,8 @@ class PhonemeboardViewController: UIViewController {
     @IBOutlet weak var multitouchGestureRecognizer: MultitouchGestureRecognizer! {
         didSet {
             multitouchGestureRecognizer.sustain = Settings.phonemeboardSustain.value
+            multitouchGestureRecognizer.count = 1
+            multitouchGestureRecognizer.mode = .stack
         }
     }
     

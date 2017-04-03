@@ -742,9 +742,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9O-cX-Tla" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="m5e-OB-eOs" customClass="MultitouchGestureRecognizer" customModule="MultitouchGestureRecognizer">
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="sustain" value="NO"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="delegate" destination="wpy-HA-xtF" id="43N-0r-WQZ"/>
                     </connections>
